@@ -25,13 +25,14 @@ export class App extends Component {
 
   render() {
     return <div>
+      <FeedbackOptions options={} onLeaveFeedback={}/>
       <Statistics 
       good={this.state.good} 
       neutral={this.state.neutral} bad={this.state.bad} 
       total={this.countTotalFeedback()} 
       positivePercentage={this.countPositiveFeedbackPercentage()}/>
 
-      <FeedbackOptions options={} onLeaveFeedback={}/>
+   
     </div>;
   }
 }
